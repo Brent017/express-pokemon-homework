@@ -17,7 +17,6 @@ app.get('/pokemon/:index', (req, res) => {
 	})
 })
 
-
 app.get('/pokemon/', (req, res) => {
 	console.log(Pokemon)
 	res.render('index.ejs', {
