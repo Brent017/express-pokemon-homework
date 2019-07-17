@@ -5,21 +5,28 @@ h1 {
 	text-align: center;
 	font-family: 'Tinos', serif;
 	font-weight: 700;
+	margin-bottom: 10px;
+	margin: 10px;
 }
 
 h2 {
-	color: #f5f542;
+	color: #6642f5;
+	font-size: 30px;
 	font-family: 'Tinos', serif;
-	font-weight: 400;
+	font-weight: 700;
+	margin-top: 20px;
 }
 
 body {
-	background-color: #f59842;
+	/*background-color: #f59842;*/
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvacb65A49TkXk3wlTLnslg_NULgLapLK1T9UwTa9jUgqiG0ca");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 li {
-	font-size: 20px;
+	font-size: 25px;
 	display: block;
 	font-family: 'Tinos', serif;
-	font-weight: 400;
+	font-weight: 700;
 }
