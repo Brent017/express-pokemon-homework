@@ -2,14 +2,19 @@ const express = require('express');
 
 const app = express();
 
-const pokemon = require('./pokemon');
+const Pokemon = require('./models/pokemon');
 
-app.get('/pokemon', (req, res) => {
-	res.send(pokemon);
+app.use(express.static('public'));
+// app.get('/pokemon', (req, res) => {
+// 	res.send(Pokemon);
+// });
+
+app.get('/pokemon/', (req, res) => {
+	console.log(Pokemon)
+	res.render('index.ejs', {
+		pokemon: Pokemon
+	})
 })
-
-
-
 
 
 

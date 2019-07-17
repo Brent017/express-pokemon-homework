@@ -1,0 +1,19 @@
+h1 {
+	color: #f5f542;
+	text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px #000000, 2px 2px 0 #000000;
+	font-size: 75px;
+	text-align: center;
+	font-family: 'Tinos', serif;
+	font-weight: 700;
+}
+
+body {
+	background-color: #f59842;
+}
+
+li {
+	font-size: 25px;
+	display: block;
+	font-family: 'Tinos', serif;
+	font-weight: 400;
+}
