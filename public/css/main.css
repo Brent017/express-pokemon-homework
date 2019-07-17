@@ -7,6 +7,12 @@ h1 {
 	font-weight: 700;
 }
 
+h2 {
+	color: #f5f542;
+	font-family: 'Tinos', serif;
+	font-weight: 400;
+}
+
 body {
 	background-color: #f59842;
 }
