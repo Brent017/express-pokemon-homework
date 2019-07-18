@@ -7,12 +7,16 @@
 </head>
 <body>
 	<h1>Pokemon</h1>
-
+	<div class="form">
 	<ul class="pokemon">
 		<%pokemon.forEach(function(pokemon, index) {%>
-		<li><a href="/pokemon/<%=index%>"><%=pokemon.name%></a></li>
-	<%});%>
-</ul>
+			<div class="action-link p<%=index%>"><li><a href="/pokemon/<%=index%>"><%=pokemon.name%></a></li>
+			<form method="POST" action="/pokemon/<%=index%>?_method=DELETE">
+				<input id="delete" class="button" type="submit" name="" value="DELETE"/>
+			</form></div>
+		<%});%>
+	</ul>
+	</div>
 </body>
 </html>
 
