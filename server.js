@@ -11,10 +11,12 @@ app.use(express.static('public'));
 // 	res.send(Pokemon);
 // });
 
-// Post
-app.post('/pokemon', (req, res) => {
-	Pokemon.push(req.body);
-	res.redirect('/pokemon')
+// Index
+app.get('/pokemon/', (req, res) => {
+	console.log(Pokemon)
+	res.render('index.ejs', {
+		pokemon: Pokemon
+	})
 })
 
 // New
@@ -25,7 +27,7 @@ app.get('/pokemon/new', (req, res) => {
 // Show
 app.get('/pokemon/:index', (req, res) => {
 	// console.log(req.params, "req params");
-	// console.log('/pokemon/:index');
+	console.log('/pokemon/:index');
 	res.render('show.ejs', {
 		pokemon: Pokemon[req.params.index],
 		index: req.params.index
@@ -40,18 +42,16 @@ app.get('/pokemon/:index/edit', (req, res) => {
 	})
 });
 
+// Post
+app.post('/pokemon', (req, res) => {
+	Pokemon.push(req.body);
+	res.redirect('/pokemon')
+})
+
 // Delete
 app.delete('/pokemon/:index', (req, res) => {
 	Pokemon.splice(req.params.index, 1);
 	res.redirect('/pokemon');
-})
-
-// Index
-app.get('/pokemon/', (req, res) => {
-	console.log(Pokemon)
-	res.render('index.ejs', {
-		pokemon: Pokemon
-	})
 })
 
 // Update

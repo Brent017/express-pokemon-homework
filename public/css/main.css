@@ -77,8 +77,7 @@ form, a {
 
 .pokemon {
 	display: grid;
-	max-width: 960px
-	margin-left: 5px;
+	max-width: 960px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 10px;
 }
@@ -93,3 +92,4 @@ form, a {
 .p6 {
 	grid-column: 2/3;
 }
+

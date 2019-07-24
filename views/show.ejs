@@ -8,8 +8,12 @@
 <body>
 	<h2><%=pokemon.name%></h2>
 	<img class="pic" src="<%=pokemon.img%>">
+	<section>
 	<form method="POST" action="/pokemon/<%=index%>?_method=DELETE">
 		<input id="delete" type="submit" class="button" name="" value="DELETE"/>
+	</form>
+	<form action="/pokemon/<%=index%>/edit">
+		<input id="edit" type="submit" class="button" name="" value="EDIT"/>
 	</form>
 </ul>
 </body>
